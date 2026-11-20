@@ -153,7 +153,7 @@
       const requested=location.hash.slice(1);const next=Object.prototype.hasOwnProperty.call(meta,requested)?requested:'home',changed=active!==next;
       active=next;home.hidden=next!=='home';detail.hidden=next==='home';
       if(next==='home')renderHome();else{if(changed)filter='all';renderDetail()}
-      if(changed)window.scrollTo({top:0,behavior:'instant'});
+      if(changed)window.scrollTo({top:0,behavior:'auto'});
       document.title=(next==='home'?'وِرد':meta[next].title)+' | أذكارك كل يوم';
     }
     list.addEventListener('click',(e)=>{
