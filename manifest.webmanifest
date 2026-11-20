@@ -1,0 +1,20 @@
+{
+  "name": "وِرد",
+  "short_name": "وِرد",
+  "description": "أذكار الصباح والمساء والنوم مع عدّاد لكل ذكر",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f8f7f1",
+  "theme_color": "#164f41",
+  "icons": [
+    {
+      "src": "/apple-touch-icon.png?v=1",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
