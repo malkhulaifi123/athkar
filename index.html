@@ -26,7 +26,7 @@
     .tools{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin:28px 0 18px}.filters{display:flex;gap:7px;background:var(--surface);padding:5px;border:1px solid var(--border);border-radius:13px}.filter{border:0;background:transparent;color:var(--muted);font-size:14px;font-weight:700;border-radius:10px;padding:10px 14px}.filter.active{background:var(--green);color:var(--bg)}.reset-all{background:transparent;border:1px solid var(--border);color:var(--muted);padding:11px 13px;border-radius:12px;font-size:14px}.reset-all:hover{color:#b3554a;border-color:#b3554a}
     .athkar-list{display:grid;gap:17px;margin-bottom:35px}.dhikr{border:1px solid var(--border);border-radius:21px;background:var(--surface);padding:25px 29px 23px;box-shadow:var(--shadow);transition:border-color .2s}.dhikr.done{border-color:#9aba9e;background:color-mix(in srgb,var(--success) 62%,var(--surface))}.dhikr-head{display:flex;justify-content:space-between;gap:12px;align-items:start}.dhikr-title{display:flex;gap:12px;align-items:center}.dhikr-number{display:grid;place-items:center;width:32px;height:32px;flex-shrink:0;background:var(--success);color:var(--green2);border-radius:10px;font-size:14px;font-weight:800}.dhikr-title h2{font-size:18px;margin:0}.times{flex-shrink:0;border:1px solid var(--border);color:var(--muted);border-radius:999px;padding:7px 12px;font-size:13px;font-weight:700}.dhikr-text{white-space:pre-line;font:400 clamp(23px,2.65vw,29px)/2 "Amiri",Georgia,serif;margin:24px 0 17px;color:var(--ink);overflow-wrap:anywhere}.dhikr-note{font-size:14px;color:var(--muted);background:var(--bg);border-right:3px solid var(--gold);padding:10px 13px;border-radius:8px;margin:0 0 18px;line-height:1.8}
     .dhikr-bottom{border-top:1px solid var(--border);padding-top:19px;display:flex;gap:13px;align-items:center;justify-content:space-between;flex-wrap:wrap}.counter-info{display:flex;align-items:center;gap:9px;color:var(--muted);font-size:15px}.counter-info strong{font-size:21px;color:var(--green2);direction:ltr;font-variant-numeric:tabular-nums}.counter-controls{display:flex;align-items:center;gap:9px}.count-btn{border:0;background:var(--green);color:var(--bg);border-radius:12px;padding:12px 19px;font-size:15px;font-weight:800;min-height:46px;transition:transform .12s,background .12s}.count-btn:active{transform:scale(.96)}.count-btn:disabled{background:var(--success);color:var(--green2);border:1px solid var(--border);cursor:default}.undo-btn{border:1px solid var(--border);background:var(--surface);color:var(--muted);border-radius:12px;padding:12px 15px;min-height:46px;font-size:14px}.undo-btn:disabled{opacity:.4;cursor:default}.source{display:block;width:100%;margin-top:4px;font-size:12px;color:var(--muted)}.source a{color:var(--green2);text-underline-offset:4px}
-    .empty{border:1px dashed var(--border);background:var(--surface);padding:48px 20px;text-align:center;border-radius:20px;color:var(--muted);font-size:18px}.empty strong{display:block;font-size:25px;color:var(--green2);margin-bottom:9px}.foot{border-top:1px solid var(--border);padding:29px 0 35px;text-align:center;color:var(--muted);font-size:14px;line-height:1.9}.foot a{color:var(--green2)}
+    .group-heading{border-bottom:1px solid var(--border);padding:16px 4px 11px;margin-top:12px}.group-heading h2{font-size:21px;color:var(--green);margin:0}.group-heading p{color:var(--muted);font-size:14px;line-height:1.6;margin:5px 0 0}.dhikr.optional{border-style:dashed}.optional-label{display:inline-block;margin-inline-start:8px;padding:5px 9px;background:var(--success);color:var(--green2);font-size:12px;font-weight:800;border-radius:99px;white-space:nowrap}.empty{border:1px dashed var(--border);background:var(--surface);padding:48px 20px;text-align:center;border-radius:20px;color:var(--muted);font-size:18px}.empty strong{display:block;font-size:25px;color:var(--green2);margin-bottom:9px}.foot{border-top:1px solid var(--border);padding:29px 0 35px;text-align:center;color:var(--muted);font-size:14px;line-height:1.9}.foot a{color:var(--green2)}
     .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
     @media(max-width:760px){.container{padding-inline:17px}.header-inner{min-height:68px}.brand{font-size:24px}.hero{padding:51px 26px;margin-top:22px;border-radius:23px}.hero h1{font-size:48px}.hero p{font-size:17px}.section-heading{margin-top:25px}.category-grid{grid-template-columns:1fr;gap:12px}.category-card{padding:20px 22px}.category-card p{min-height:0;margin-bottom:15px}.category-card h3{margin:9px 0 4px}.cat-icon{width:53px;height:53px;font-size:27px}.home-note{margin-top:19px}.detail-header{padding-top:24px}.detail-title-line h1{font-size:42px}.detail-icon{width:52px;height:52px;font-size:27px}.dhikr{padding:21px 19px}.dhikr-text{font-size:24px;line-height:1.9;margin:19px 0}.dhikr-bottom{align-items:stretch}.counter-controls{width:100%}.count-btn{flex:1}.tools{align-items:stretch}.filters{width:100%;justify-content:space-between}.filter{flex:1}.reset-all{width:100%}.head-link{padding:10px}.brand-small{font-size:11px}}
     @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
@@ -103,14 +103,65 @@
       {id:'food',title:'الحمد لله الذي أطعمنا',count:1,text:'الْحَمْدُ لِلَّهِ الَّذِي أَطْعَمَنَا وَسَقَانَا، وَكَفَانَا وَآوَانَا، فَكَمْ مِمَّنْ لَا كَافِيَ لَهُ وَلَا مُؤْوِيَ.',source:'صحيح مسلم: ٢٧١٥',url:'https://sunnah.com/muslim:2715a'},
       {id:'surrender',title:'اللهم أسلمت نفسي إليك',count:1,text:'اللَّهُمَّ أَسْلَمْتُ نَفْسِي إِلَيْكَ، وَفَوَّضْتُ أَمْرِي إِلَيْكَ، وَوَجَّهْتُ وَجْهِي إِلَيْكَ، وَأَلْجَأْتُ ظَهْرِي إِلَيْكَ، رَغْبَةً وَرَهْبَةً إِلَيْكَ، لَا مَلْجَأَ وَلَا مَنْجَا مِنْكَ إِلَّا إِلَيْكَ، آمَنْتُ بِكِتَابِكَ الَّذِي أَنْزَلْتَ، وَبِنَبِيِّكَ الَّذِي أَرْسَلْتَ.',note:'من هدي النوم أن يكون هذا الدعاء آخر ما تقوله.',source:'صحيح البخاري: ٦٣١١',url:'https://sunnah.com/bukhari:6311'}
     ];
+    // Evening adhkar match the supplied 23 images; image numbers 8 and 18 are omitted.
+    const eveningLookup=Object.fromEntries(
+      common.map(x=>[x.id,Object.assign({},x,{text:x.pm||x.text})])
+        .concat(eveningOnly.map(x=>[x.id,x]))
+    );
+    const fromImage=(id,photo,changes={})=>Object.assign({},eveningLookup[id],{photo},changes);
+    const surahTexts=THREE_SURAHS.split('\n\n');
+    const surah=(n,id,title,photo,number)=>({
+      id:'evening-'+id,title,photo,count:3,
+      text:surahTexts[n].replace(/^سورة[^\n]*\n/,''),
+      source:'القرآن الكريم · أذكار المساء',url:'https://quran.com/'+number,
+      note:'تُقرأ السورة ثلاث مرات. لكل سورة عدّاد مستقل.'
+    });
+    const eveningCore=[
+      surah(0,'ikhlas','سورة الإخلاص',2,112),
+      surah(1,'falaq','سورة الفلق',3,113),
+      surah(2,'nas','سورة الناس',4,114),
+      fromImage('kingdom',5),
+      fromImage('bika',6),
+      fromImage('sayyid',7),
+      fromImage('afini',10),
+      fromImage('hasbi',12,{note:'ورد سبع مرات عن أبي الدرداء رضي الله عنه موقوفًا، ولم يثبت بهذا اللفظ مرفوعًا إلى النبي ﷺ.'}),
+      fromImage('afiya',13),
+      fromImage('ghayb',14),
+      fromImage('bismillah',15),
+      fromImage('raditu',16,{note:'وردت روايات في قوله ثلاث مرات صباحًا ومساءً، واختلف أهل العلم في تصحيح بعض أسانيدها.'}),
+      fromImage('hayyu',17),
+      fromImage('fitrah',19),
+      fromImage('tawhid',20,{count:10,note:'يُقال هنا عشر مرات. ورد فضل ذكر التوحيد مئة مرة في اليوم أيضًا؛ وهو ورد مستقل، فلا نخلط بين العددين.'}),
+      fromImage('subhan',21),
+      fromImage('kalimat',22,{note:'ورد هذا الذكر عند المساء، والعدد هنا ثلاث مرات حسب ترتيبك.'})
+    ];
+    const eveningOptional=[
+      fromImage('kursi',1,{optional:true,note:'آية الكرسي من القرآن الكريم، ولكن في تخصيصها للمساء خلاف من جهة ثبوت الرواية. وُضعت هنا اختيارية.'}),
+      fromImage('nimah',9,{optional:true,note:'دعاء شكر النعمة؛ اختلف العلماء في درجة الحديث الوارد في فضله الخاص عند المساء.'}),
+      {id:'evening-worries',photo:11,title:'الاستعاذة من الهم والحزن',
+       count:1,noFixedCount:true,optional:true,
+       text:'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ، وَأَعُوذُ بِكَ مِنَ الْعَجْزِ وَالْكَسَلِ، وَأَعُوذُ بِكَ مِنَ الْجُبْنِ وَالْبُخْلِ، وَأَعُوذُ بِكَ مِنْ غَلَبَةِ الدَّيْنِ وَقَهْرِ الرِّجَالِ.',
+       source:'سنن أبي داود: ١٥٥٥ · رواية تخصيص المساء مختلف فيها',url:'https://sunnah.com/abudawud:1555',
+       note:'الدعاء صحيح في معناه بألفاظ قريبة في صحيح البخاري، أما تخصيص هذه الصيغة للمساء ففيه خلاف؛ لذلك لا نفرض عددًا محددًا.'},
+      {id:'evening-salawat',photo:23,title:'الصلاة على النبي ﷺ',
+       count:1,noFixedCount:true,optional:true,
+       text:'اللَّهُمَّ صَلِّ وَسَلِّمْ عَلَى نَبِيِّنَا مُحَمَّدٍ.',
+       source:'سورة الأحزاب: ٥٦ · أصل مشروعية الصلاة على النبي ﷺ',url:'https://quran.com/33/56',
+       note:'الصلاة على النبي ﷺ مشروعة في كل وقت، دون إلزام بعشر مرات مخصوصة للمساء. الزر هنا لتسجيل القراءة وليس فرض عدد معين.'}
+    ];
+    if(eveningCore.length!==17||eveningOptional.length!==4||
+      eveningCore.some((x,i)=>i>0&&x.photo<=eveningCore[i-1].photo)||
+      eveningOptional.some((x,i)=>i>0&&x.photo<=eveningOptional[i-1].photo)) {
+      throw new Error('Invalid evening adhkar order');
+    }
     const sections = {
-      morning:common.map(item=>Object.assign({},item,{text:item.am||item.text})).concat(morningOnly),
-      evening:common.map(item=>Object.assign({},item,{text:item.pm||item.text})).concat(eveningOnly),
+      morning:common.map(x=>Object.assign({},x,{text:x.am||x.text})).concat(morningOnly),
+      evening:eveningCore.concat(eveningOptional),
       sleep:sleep
     };
     const meta = {
       morning:{title:'أذكار الصباح',icon:'☀',short:'ابدأ يومك بالذكر والطمأنينة',intro:'أفضل وقت لها من الفجر إلى طلوع الشمس. اقرأ الأذكار واضغط العداد أسفل كل ذكر بعد تكراره.'},
-      evening:{title:'أذكار المساء',icon:'☾',short:'اختم نهارك بقلب مطمئن',intro:'يُستحب المحافظة عليها من بعد العصر إلى المغرب. اقرأ الأذكار واضغط العداد أسفل كل ذكر بعد تكراره.'},
+      evening:{title:'أذكار المساء',icon:'☾',short:'١٧ ذكرًا أساسيًا و٤ إضافية',intro:'الأذكار الأساسية مرتبة وفق صورك، ثم أربعة أذكار إضافية اختيارية. لا تدخل الإضافية في شريط تقدم الورد الأساسي.'},
       sleep:{title:'أذكار النوم',icon:'✦',short:'نم على ذكر الله وسكينته',intro:'تُقال عند الاستعداد للنوم. تسبيح النوم مفصول إلى ثلاثة عدادات: ٣٣ تسبيحة، ٣٣ تحميدة، ٣٤ تكبيرة.'}
     };
     for(const key of ['morning','evening']) for(const item of sections[key]) if(!item.url) item.url=HISN_ME;
@@ -124,7 +175,7 @@
     function write(section,obj){try{localStorage.setItem(storeKey(section),JSON.stringify(obj))}catch(e){}}
     let active='home',filter='all',currentDate=dateKey();
     function count(section,item){const value=Number(read(section)[item.id]||0);return Math.max(0,Math.min(item.count,Number.isFinite(value)?value:0))}
-    function progress(section){let done=0;for(const item of sections[section]) if(count(section,item)>=item.count) done++;return {done,total:sections[section].length,pct:Math.round(done/sections[section].length*100)}}
+    function progress(section){const core=sections[section].filter(x=>!x.optional);let done=0;for(const item of core) if(count(section,item)>=item.count)done++;return {done,total:core.length,pct:core.length?Math.round(done/core.length*100):0}}
     function renderHome(){
       const grid=document.getElementById('category-grid');grid.innerHTML='';
       for(const key of ['morning','evening','sleep']){
@@ -142,9 +193,20 @@
       list.innerHTML='';
       const items=sections[active].filter(item=>filter==='all'||(filter==='done' ? count(active,item)===item.count : count(active,item)<item.count));
       if(!items.length){list.innerHTML='<div class="empty"><strong>✦ '+(filter==='remaining'?'أتممت الورد، بارك الله فيك!':'لا توجد أذكار هنا')+'</strong>'+(filter==='remaining'?'يمكنك مراجعة الأذكار المكتملة أو العودة إلى الرئيسية.':'غيّر التصفية لعرض بقية الأذكار.')+'</div>';}
+      let lastGroup='';
       for(const item of items){
-        const idx=sections[active].indexOf(item)+1,n=count(active,item),done=n===item.count,card=document.createElement('article');card.className='dhikr'+(done?' done':'');card.id='dhikr-'+item.id;
-        card.innerHTML='<div class="dhikr-head"><div class="dhikr-title"><span class="dhikr-number">'+numeral(idx)+'</span><h2>'+escaped(item.title)+'</h2></div><span class="times">'+numeral(item.count)+' '+(item.count===1?'مرة':'مرات')+'</span></div><div class="dhikr-text" lang="ar">'+escaped(item.text)+'</div>'+(item.note?'<div class="dhikr-note">✧ '+escaped(item.note)+'</div>':'')+'<div class="dhikr-bottom"><div class="counter-info"><span>عدد التكرار</span><strong>'+numeral(n)+' / '+numeral(item.count)+'</strong></div><div class="counter-controls"><button type="button" class="count-btn" data-plus="'+escaped(item.id)+'" '+(done?'disabled':'')+' aria-label="تسجيل تكرار: '+escaped(item.title)+'">'+(done?'✓ تمّ بحمد الله':'✓ اضغط بعد الذكر')+'</button><button type="button" class="undo-btn" data-minus="'+escaped(item.id)+'" '+(n===0?'disabled':'')+' aria-label="التراجع عن تكرار: '+escaped(item.title)+'">↺ تراجع</button></div><div class="source">المصدر: <a href="'+escaped(item.url)+'" target="_blank" rel="noopener noreferrer">'+escaped(item.source||'حصن المسلم')+' ↗</a></div></div>';
+        if(active==='evening'){
+          const group=item.optional?'optional':'core';
+          if(group!==lastGroup){
+            const heading=document.createElement('div');heading.className='group-heading';
+            heading.innerHTML=group==='core'
+              ? '<h2>الأذكار الأساسية</h2><p>١٧ ذكرًا مرتبة وفق صورك، مع استبعاد الصورتين ٨ و١٨</p>'
+              : '<h2>أذكار إضافية اختيارية</h2><p>لا تدخل في إتمام الورد الأساسي أو شريط التقدم</p>';
+            list.append(heading);lastGroup=group;
+          }
+        }
+        const idx=sections[active].indexOf(item)+1,n=count(active,item),done=n===item.count,card=document.createElement('article');card.className='dhikr'+(done?' done':'')+(item.optional?' optional':'');card.id='dhikr-'+item.id;
+        card.innerHTML='<div class="dhikr-head"><div class="dhikr-title"><span class="dhikr-number">'+numeral(idx)+'</span><h2>'+escaped(item.title)+'</h2>'+(item.optional?'<span class="optional-label">اختياري</span>':'')+'</div><span class="times">'+(item.noFixedCount?'غير محدد العدد':numeral(item.count)+' '+(item.count===1?'مرة':'مرات'))+'</span></div><div class="dhikr-text" lang="ar">'+escaped(item.text)+'</div>'+(item.note?'<div class="dhikr-note">✧ '+escaped(item.note)+'</div>':'')+'<div class="dhikr-bottom"><div class="counter-info"><span>'+(item.noFixedCount?'حالة القراءة':'عدد التكرار')+'</span><strong>'+(item.noFixedCount?(done?'تمت القراءة':'لم يُقرأ'):numeral(n)+' / '+numeral(item.count))+'</strong></div><div class="counter-controls"><button type="button" class="count-btn" data-plus="'+escaped(item.id)+'" '+(done?'disabled':'')+' aria-label="تسجيل تكرار: '+escaped(item.title)+'">'+(done?(item.noFixedCount?'✓ تمت القراءة':'✓ تمّ بحمد الله'):(item.noFixedCount?'✓ قرأت الذكر':'✓ اضغط بعد الذكر'))+'</button><button type="button" class="undo-btn" data-minus="'+escaped(item.id)+'" '+(n===0?'disabled':'')+' aria-label="التراجع عن تكرار: '+escaped(item.title)+'">↺ تراجع</button></div><div class="source">المصدر: <a href="'+escaped(item.url)+'" target="_blank" rel="noopener noreferrer">'+escaped(item.source||'حصن المسلم')+' ↗</a></div></div>';
         list.append(card);
       }
       updateProgress();
